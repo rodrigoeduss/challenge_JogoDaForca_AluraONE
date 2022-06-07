@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: rgb(32, 175, 218);
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+#image {
+    background-image: url("../img/image.png");
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 272px;
+}
+
+
+
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.letras {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 2px;
+    margin-right: 2px;
+    margin-right: 2px;
+
+}
+
+/*ÁREA TECLADO*/
+
+#teclado {
+    margin-top: 30px;
+}
+
+
+/*ÁREA TECLAS*/
+
+.teclas:nth-child(3) {
+    text-align: center;
+}
+
+.teclas button {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+    border: 2px solid rgb(130, 119, 119);
+    font-size: 0.8em;
+}
+
+.teclas button:disabled {
+
+    display: none;
+}
+
+.teclas button:hover {
+    transform: scale(1.3);
+}
+
+/*ÁREA DICA*/
+
+#dica {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+
+}
+
+/*ÁREA CATEGORIA*/
+
+#categoria {
+
+    font-size: 1.2em;
+
+}
+
+/*BTN NOVO JOGO*/
+
+#btnReiniciar {
+    cursor: pointer;
+    margin-top: 35px;
+    width: 6em;
+    box-shadow: 2px 2px 2px black;
+    padding: 2px;
+    border: none;
+    opacity: 0.7;
+}
+   
+
+
+#btnReiniciar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+
+/*BTN INSERIR PALAVRA*/
+
+#btnInserePalavra {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 7.5em;
+    padding: 3px;
+    box-shadow: 2px 2px 2px black;
+    border: none;
+    outline: none;
+    opacity: 0.7;
+}
+   
+
+#btnInserePalavra:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* *************************  RESPONSIVIDADE  *************************************/
+
+
+
+@media (min-width: 321px) {
+
+    .teclas button {
+        width: 25px;
+        height: 25px;
+    }
+
+    #categoria {
+        font-size: 1.3em;
+    }
+}
+
+
+@media (min-width: 376px) {
+
+    .teclas button {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #palavra-secreta {
+        font-size: 1.3em;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .letras {
+        width: 18px;
+    }
+
+    #categoria {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (min-width: 426px) {
+
+    .teclas button {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    #palavra-secreta {
+        font-size: 1.5em;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .letras {
+        width: 20px;
+    }
+
+    #categoria {
+        font-size: 1.6em;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .teclas button {
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+
+
+    #palavra-secreta {
+        font-size: 2.5em;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .letras {
+        width: 35px;
+    }
+
+    #categoria {
+        font-size: 2em;
+    }
+}

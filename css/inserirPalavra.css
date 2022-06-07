@@ -1,0 +1,104 @@
+body {
+
+    background-image: url("../img/telaJogoDaForcaModificado.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container {
+    
+    display: flex;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+/*lEGEND NOVA PALAVRA SECRETA FIELDSET*/
+legend {
+    font-size: 2em;
+}
+
+/*LABEL PALAVRA SECRETA E CATEGORIA*/
+label {
+    display: block;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/*INPUT PALAVRA SECRETA E CATEGORIA*/
+input {
+
+    display: flex;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+    
+/*BOTÕES*/
+
+button {
+    display: flex;
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    margin-inline: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+/*BTN CADASTRAR*/
+#cadastrar {
+   
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+   
+}
+
+/*LINK E BTN VOLTAR AO JOGO*/
+a {
+    text-decoration: none;
+}
+ 
+#voltar {
+    width: 120px;
+    margin-bottom: 20px;
+}   
+
+
+
+/*REGRAS PALAVRA SECRETA*/
+p {
+    margin-top: 3px;
+    text-align: center;
+}
+  
+.regras {
+    font-size: 1.4em;
+    text-align: center;
+
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-top: 15px;
+    font-style: italic;
+}

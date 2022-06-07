@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inserirPalavra.css">
+    <title>Inserir Palavra Secreta</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <fieldset>
+                <legend>Nova Palavra Secreta</legend>
+               <!--  <form action=""> -->
+                    <label for="nova-palavra-secreta">*Palavra secreta:</label>
+                    <input type="text" id="nova-palavra-secreta"
+                            placeholder="Palavra secreta">
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" id="categoria" name="categoria" placeholder="Ex: cidades, animais...">
+                    <button id="cadastrar">Cadastrar</button>
+               <!--  </form>
+ -->
+                <a href="index.html"><button id="voltar">Voltar ao jogo</button></a>
+
+                <p class="regras">* Regras da palavra secreta:</p>
+
+                <ul>
+                    <li>Somente letras maiúsculas;</li>
+
+                    <li>Sem acentos, espaços ou caracteres especiais;</li>
+
+                </ul>
+
+
+            </fieldset>
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/inserirPalavra.js"></script>
+</body>
+
+</html>
